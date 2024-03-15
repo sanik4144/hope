@@ -37,7 +37,8 @@ header {
 }
 .logo img{
     margin-left: 20px;
-    width: 150px;
+    width: 100px;
+    height: 60px;
     border:1px solid #fa791e;
     padding: 2px;
     border-radius: 7px;
