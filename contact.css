@@ -1,293 +1,296 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    list-style: none;
-    text-decoration: none;
-    font-family: sans-serif;
-  }
-  
-  html {
-    background-color: #fafafa;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-  }
-  body {
-    background-color: #fff;
-    max-width: 100%;
-    margin: auto;
-    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
-  }
-  
-  /* reset code and common code ends here  */
-  
-  /* header starts here  */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    color: black;
-    padding: .5rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    min-height: 5vh;
-  }
-  .logo img{
-    margin-left: 20px;
-    width: 100px;
-    height: 60px;
-    border:1px solid #fa791e;
-    padding: 2px;
-    border-radius: 7px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
 }
-  nav li {
-    display: inline-block;
-    margin-right: 2rem;
-    padding: 1rem;
-    transition: all 0.4s;
-  }
-  nav li:last-child {
-    margin-right: 0;
-  }
-  .nav-link:not(.nohover):hover {
-    background-color: #f18035;
-    color: white !important;
-    border-radius: 0.6rem;
-    padding: 10px;
-    transition: all 0.3s;
-  }
-  .nav-link:not(:hover) {
-    transition: all 0.3s;
-  }
-  .nav-link {
-    font-size: 1.8rem;
-    color: black;
-    cursor: pointer;
-  }
-  .nohover{
-    background-color: #f18035;
-    color: white !important;
-    padding: 30px;
-    transition: all 0.3s;
-  }
-  .nohover:hover{
-    background-color: #f39150;
-    transition: all 0.3s;
-    border-radius: 1rem;
-  }
-  
-  
-  /* Dropdown button handling start*/
-  .dropdown { 
-    border: none;
-    outline: none;
+
+html {
+  background-color: #fafafa;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fff;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+
+/* reset code and common code ends here  */
+
+/* header starts here  */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: .5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  min-height: 5vh;
+}
+.logo img{
+  margin-left: 20px;
+  width: 100px;
+  height: 60px;
+  border:1px solid #fa791e;
+  padding: 2px;
+  border-radius: 7px;
+}
+nav li {
+  display: inline-block;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  transition: all 0.4s;
+}
+nav li:last-child {
+  margin-right: 0;
+}
+.nav-link:not(.nohover):hover {
+  background-color: #f18035;
+  color: white !important;
+  border-radius: 0.6rem;
+  padding: 10px;
+  transition: all 0.3s;
+}
+.nav-link:not(:hover) {
+  transition: all 0.3s;
+}
+.nav-link {
+  font-size: 1.8rem;
+  color: black;
+  cursor: pointer;
+}
+.nohover{
+  background-color: #f18035;
+  color: white !important;
+  padding: 20px;
+  transition: all 0.3s;
+}
+.nohover:hover{
+  background-color: #f39150;
+  transition: all 0.3s;
+  border-radius: 1rem;
+}
+
+
+/* Dropdown button handling start*/
+.dropdown-list { 
+  border: none;
+  outline: none;
+  color: white;
+  /* padding: 14px 16px; */
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  margin: 0;
+}
+.dropbtn{
+  font-size: 1.8rem;  
+  border: none;
+  border-radius: 0.6rem;
+  outline: none;
+  color: black;
+  padding: 10px;
+  background-color: inherit;
+  font-family: sans-serif;
+  margin: 0;
+}
+.dropdown-list:hover .dropbtn {
+  background-color: #f18035;
+  color: white !important;
+  border-radius: 0.6rem;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+.dropdown-list:not(:hover) .dropbtn {
+  transition: all 0.3s;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f180359a;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropitem {
+  font-size: 1.8rem;
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Dropdown button handling end*/
+
+
+
+/* review section and ownership star here */
+
+  .owners h3 {
     color: white;
-    padding: 14px 16px;
-    /* background-color: inherit; */
     font-family: sans-serif;
-    margin: 0;
-  }
-  .dropbtn{
-    font-size: 1.8rem;  
-    border: none;
-    border-radius: 0.6rem;
-    outline: none;
-    color: black;
-    padding: 10px;
-    background-color: inherit;
-    font-family: sans-serif;
-    margin: 0;
-  }
-  .dropdown:hover .dropbtn {
-    background-color: #f18035;
-    color: white !important;
-    border-radius: 0.6rem;
-    margin-right: 10px;
-    transition: all 0.3s;
-  }
-  .dropdown:not(:hover) .dropbtn {
-    transition: all 0.3s;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
+    text-align: center;
+    font-size: 5rem;
     background-color: #f180359a;
-    min-width: 180px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    margin: 20px;
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 5rem;
+    font-style: italic;
+    font-stretch:wider;
   }
-  .dropdown-content a {
-    float: none;
+
+  .owners-card-section {
+    display:flex;
+    align-items: center;
+    /* text-align: center; */
+  }
+  
+  .owners-card {
+    flex: 1;
+    height: 480px;
+    border-radius: 0.6rem;
+    background-color: #f1803555;
+    border: #f180359a solid 0.5px;
+    box-shadow: 5px 5px 15px 1px;
+    padding: 3rem 1rem;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  
+  .owners-card:hover {
+    cursor:pointer
+  }
+  
+  .owners-image {
+    display: block;
+    width: 35rem;
+    text-align: center;
+    align-items: center;
+    border-radius: 0.6rem;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+  }
+  .owners-image:hover{
+    filter: grayscale(0%);
+    transition: all 0.3s;
+  }
+  .owners-card-description {
+    color: black;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  /* review section and ownership ends here */
+  
+  
+  /* contact section starts here  */
+
+  #contact-section {
+    background-color:#f18035fe;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+  }
+
+  /* #contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+.contact-box {
+    text-align: center;
+    margin-left: 18rem;
+} 
+
+  .form-field {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input,
+  textarea {
+    flex: .9;
+    width: 40rem;
+    margin-top:5px;
+    font-size: 1.6rem;
+    height: 2px;
+    padding: 2rem 1rem;
+    border: none;
+    background-color: #f18035;
+    border-bottom: 5px solid white;
     color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
   }
-  .dropdown:hover .dropdown-content {
-    display: block;
+  ::placeholder{
+    color: white;
   }
-  /* Dropdown button handling end*/
-  
-  
-  
-  /* review section and ownership star here */
-  
-    .owners h3 {
-      color: white;
-      font-family: sans-serif;
-      text-align: center;
-      font-size: 5rem;
-      background-color: #f180359a;
-      margin: 20px;
-      margin-right: 20%;
-      margin-left: 20%;
-      border-radius: 5rem;
-      font-style: italic;
-      font-stretch:wider;
-    }
-  
-    .owners-card-section {
-      display:flex;
-      align-items: center;
-      /* text-align: center; */
-    }
-    
-    .owners-card {
-      flex: 1;
-      height: 480px;
-      border-radius: 0.6rem;
-      background-color: #f1803555;
-      border: #f180359a solid 0.5px;
-      box-shadow: 5px 5px 15px 1px;
-      padding: 3rem 1rem;
-      margin: 5rem;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.3s;
-      border-radius: 20px;
-      text-align: center;
-      align-items: center;
-    }
-    
-    
-    .owners-card:hover {
-      cursor:pointer
-    }
-    
-    .owners-image {
-      display: block;
-      width: 35rem;
-      text-align: center;
-      align-items: center;
-      border-radius: 0.6rem;
-      filter: grayscale(100%);
-      transition: all 0.3s;
-    }
-    .owners-image:hover{
-      filter: grayscale(0%);
-      transition: all 0.3s;
-    }
-    .owners-card-description {
-      color: black;
-      text-align: center;
-      font-size: 1.6rem;
-      font-family: sans-serif;
-      margin-top: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    /* review section and ownership ends here */
-    
-    
-    /* contact section starts here  */
-  
-    #contact-section {
-      background-color:#f18035fe;
-      min-height: 20vh;
-      display: flex;
-      flex-direction: row;
-      padding-top: 4rem;
-    }
-  
-    /* #contact-section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  textarea {
+    resize: none;
+    height: 12vh;
   }
-  */
-  .contact-box {
-      text-align: center;
-      margin-left: 18rem;
-  } 
+  .form-btn{
+    display: flex;
+  }
+  .contact-btn {
+    color:black;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    align-items: center;
+    box-shadow: black 5px 5px 5px;
+    border-radius: 20px;
+    border: white solid 0.1px;
+    margin-top: 5px;
+    height: 40px;
+    width: 30%;
+  }
   
-    .form-field {
-      margin-bottom: 1.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    input,
-    textarea {
-      flex: .9;
-      width: 40rem;
-      margin-top:5px;
-      font-size: 1.6rem;
-      height: 2px;
-      padding: 2rem 1rem;
-      border: none;
-      background-color: #f18035;
-      border-bottom: 5px solid white;
-      color: white;
-    }
-    ::placeholder{
-      color: white;
-    }
-    textarea {
-      resize: none;
-      height: 12vh;
-    }
-    .form-btn{
-      display: flex;
-    }
-    .contact-btn {
-      color:black;
-      font-size: 1.5rem;
-      font-family: sans-serif;
-      align-items: center;
-      box-shadow: black 5px 5px 5px;
-      border-radius: 20px;
-      border: white solid 0.1px;
-      margin-top: 5px;
-      height: 40px;
-      width: 30%;
-    }
-    
-    .contact-btn:hover{
-      background-color: #f180356f;
-      transition: all 0.3s;
-      cursor: pointer;
-      color: white;
-    }
-  
-    .contact-handle{
-      display: flex;
-      flex-direction: column;
-      padding-left: 40rem;
-      padding-top: 3rem;
-    }
-    .contact-handle a{
-      color: white;
-      font-size: 2rem;
-      padding: .7rem;
-    }
-    .contact-handle a:hover{
-      transform: scale(1.2);
-      transition: all .3s;
-    }
-    .contact-handle a:not(:hover){
-      transition: all .3s;
-    }
-    /* contact section ends here  */
+  .contact-btn:hover{
+    background-color: #f180356f;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: white;
+  }
+
+  .contact-handle{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40rem;
+    padding-top: 3rem;
+  }
+  .contact-handle a{
+    color: white;
+    font-size: 2rem;
+    padding: .7rem;
+  }
+  .contact-handle a:hover{
+    transform: scale(1.2);
+    transition: all .3s;
+  }
+  .contact-handle a:not(:hover){
+    transition: all .3s;
+  }
+  /* contact section ends here  */
