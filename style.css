@@ -140,6 +140,9 @@ nav li:last-child {
 
 /* Donation Progress Start */
 
+/* .donationprogess-section{
+    
+} */
 .donationprogess{
     width: 50%;
     margin: 0 auto;
@@ -195,3 +198,35 @@ nav li:last-child {
 .progressbtn2:hover{
     background-color: #ff6600;
 }
+
+/* Donation Progress End */
+
+/* Advertisement 1 Start */
+
+.ad1-section{
+    background: linear-gradient(to bottom, white 50%, #f18035 50%); 
+}
+.ad1{
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+.ad1-text{
+    border-radius: 2rem 0rem 0rem 2rem;
+    background-color: white;
+    padding: 10.2rem;
+    box-shadow: 2px 2px 8px 2px rgb(117, 110, 110);
+}
+.ad1-text p{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: justify;
+}
+.ad1-image img{
+    border-radius: 0 2rem 2rem 0;
+    box-shadow: 2px 2px 8px 2px rgb(117, 110, 110);
+}
+
+/* Advertisement 1 End */
