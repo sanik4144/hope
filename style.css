@@ -230,3 +230,67 @@ nav li:last-child {
 }
 
 /* Advertisement 1 End */
+
+
+
+/* Card Group 1 Start */
+
+.cardgroup1-text{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+.cardgroup1-text h1{
+    font-size: 4rem;
+    font-family: sans-serif;
+}
+.cardgroup1-text p{
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+.cardgroup1{
+    justify-content: center;
+    padding: 5rem;
+    display: flex;
+}
+.card{
+    max-width: 40rem;
+    padding: 2rem;
+    background-color: #ffffffd2;
+    margin: 2rem;
+    /* height: 45rem; */
+}
+.cardh2{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: justify;
+}
+.cardtext{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    text-align: justify;
+}
+.cardimg{
+    border-bottom: .6rem solid #fd6804;
+}
+.cardbtn{
+    height: 4rem;
+    width: 50%;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    border: 2px solid #fa6501e7;
+    background-color: #fa791e;
+    transition: all 0.3s;
+}
+.cardbtn:hover{
+    background-color: #df5f0a;
+    transition: all 0.3s;
+}
+
+/* Card Group 1 End */
