@@ -294,3 +294,128 @@ nav li:last-child {
 }
 
 /* Card Group 1 End */
+
+
+
+/* Rotating Card 1 Start */
+
+.rotatingcard-section{
+    width: 85%;
+    height: 60rem;
+    margin: 0 auto;
+}
+.rotatingcard-text{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+.rotatingcard-text h1{
+    font-size: 4rem;
+    font-family: sans-serif;
+}
+.rotatingcard-text p{
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+.rotatingcard{
+    display: flex;
+    text-align: center;
+    height: 350px;
+}
+.card1{
+    margin: 10px;
+    justify-content: space-between;
+    width: 70rem;
+    padding-top: 45px;
+    position: relative;
+}
+.card1-side{
+    height: 10rem;
+    border-radius: 5rem;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.card1 img{
+    width: 60rem;
+    border: 5px solid #fa791e;
+    border-style:ridge;
+}
+.card1-side.back {
+    width: 60rem;
+    transform: rotateY(-180deg);
+    background-color: white;
+}
+.card1-side.back h1{
+    color: #f18035;
+    margin-top: 2.5rem;
+    font-size: 3.5rem;
+    font-family: sans-serif;
+}
+.card1-side.back p{
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    text-align: justify;
+    padding: 8px;
+    opacity: 50%;
+    font-weight: 100;
+}
+.card1:hover .card1-side.front {
+    transform: rotateY(180deg);
+    transition: all 1.2s;
+}
+  
+.card1:hover .card1-side.back {
+    transform: rotateY(0deg);
+    transition: all 1.2s;
+}
+
+/* Rotating Card 1 End */
+
+/* Donation Bar Start */
+
+.donationbar-section{
+    height: 8rem;
+    width: 100%;
+    background-color: orange;
+    background-image: linear-gradient(to right, rgb(255, 102, 0) , rgb(208, 255, 0));
+}
+.donationbar{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+.donationbar h1{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin: 2rem;
+}
+.donationbar input{
+    margin: 2rem;
+    width: 25rem;
+    border-radius: .5rem;
+    height: 4rem;
+}
+.donationbar button{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: white;
+    width: 10rem;
+    background-color: #fa791e;
+    border: 2px solid #fa6501e7;
+    margin: 2rem;
+    height: 4rem;
+    transition: all 0.3s;
+}
+.donationbar button:hover{
+    background-color: #df5f0a;
+    transition: all 0.3s;
+}
+::placeholder{
+    font-size: 2.2rem;
+}
