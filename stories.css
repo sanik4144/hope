@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+html {
+    background-color: #fafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    height: 10000px;
+    background-color: #fff;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+
+/* reset code and common code ends here  */
+
+/* header starts here  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: .5rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+}
+.logo img{
+    margin-left: 20px;
+    width: 100px;
+    height: 60px;
+    border:1px solid #fa791e;
+    padding: 2px;
+    border-radius: 7px;
+}
+nav li {
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    transition: all 0.4s;
+}
+nav li:last-child {
+    margin-right: 0;
+}
+.nav-link:not(.nohover):hover {
+    background-color: #f18035;
+    color: white !important;
+    border-radius: 0.6rem;
+    padding: 10px;
+    transition: all 0.3s;
+}
+.nav-link:not(:hover) {
+    transition: all 0.3s;
+}
+.nav-link {
+    font-size: 1.8rem;
+    color: black;
+    cursor: pointer;
+}
+.nohover{
+    background-color: #f18035;
+    color: white !important;
+    padding: 20px;
+    transition: all 0.3s;
+}
+.nohover:hover{
+    background-color: #f39150;
+    transition: all 0.3s;
+    border-radius: 1rem;
+}
+
+
+/* Dropdown button handling start*/
+.dropdown-list { 
+    border: none;
+    outline: none;
+    color: white;
+    /* padding: 14px 16px; */
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    margin: 0;
+}
+.dropbtn{
+    font-size: 1.8rem;  
+    border: none;
+    border-radius: 0.6rem;
+    outline: none;
+    color: black;
+    padding: 10px;
+    background-color: inherit;
+    font-family: sans-serif;
+    margin: 0;
+}
+.dropdown-list:hover .dropbtn {
+    background-color: #f18035;
+    color: white !important;
+    border-radius: 0.6rem;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+.dropdown-list:not(:hover) .dropbtn {
+    transition: all 0.3s;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f180359a;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropitem {
+    font-size: 1.8rem;
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Dropdown button handling end*/
+
+/* Body Image section Start */
+
+.bodyimage img{
+    display: flex;
+    margin: 0 auto;
+}
+.buttonssection{
+    display: flex;
+}
+.storybuttons{
+    display: flex;
+    margin: auto;
+}
+.storybuttons button{
+    margin: 1px;
+    height: 10rem;
+    width: 20rem;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    background-image: linear-gradient(to right, #fa710f , #f38a40);
+    transition: ease-out 0.4s;
+}
+.slide:hover{
+    box-shadow: inset 25rem 0 0 0 #ff6a00;
+}
+
+/* body image section end */
+
+/* Stories card start */
+
+.stories-section{
+    display: flex;
+    margin: 12%;
+    margin-top: 5%;
+}
+.storiescard{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+.card{
+    width: 50rem;
+    padding: 1rem;
+    border: none;
+}
+.cardtext{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.card::after{
+    content: "";
+    position: absolute;
+    left: 5;
+    bottom: 0;
+    height: .8rem;
+    width: 0%;
+    background-color: #fa710f;
+    transition: all ease 1s;
+}
+.card:hover::after{
+   width: 96%;
+}
+.cardh1{
+    color: #f0833a;
+}
+.upcoming{
+    border: 1px solid black;
+    width: 40rem;
+}
