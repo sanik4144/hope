@@ -140,6 +140,7 @@ nav li:last-child {
 .bodyimage img{
     display: flex;
     margin: 0 auto;
+    max-width: 150rem;
 }
 .buttonssection{
     display: flex;
@@ -180,7 +181,7 @@ nav li:last-child {
     margin: 0px;
 }
 .card{
-    width: 50rem;
+    width: 45rem;
     padding: 1rem;
     border: none;
 }
@@ -190,7 +191,7 @@ nav li:last-child {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
-.card::after{
+/* .card::after{
     content: "";
     position: absolute;
     left: 5;
@@ -202,7 +203,7 @@ nav li:last-child {
 }
 .card:hover::after{
    width: 96%;
-}
+} */
 .cardh1{
     color: #f0833a;
 }
@@ -348,3 +349,249 @@ nav li:last-child {
     transition: all .3s;
   }
   /* contact section ends here  */
+
+
+
+
+
+
+  @media screen and (max-width: 1454px) {
+    .nav-link {
+        font-size: 1.7rem;
+    }
+    .dropbtn{
+        font-size: 1.7rem;
+    }
+    .dropitem{
+        font-size: 1.7rem;
+    }
+
+
+    .bodyimage img{
+        display: flex;
+        margin: 0 auto;
+        max-width: 120rem;
+    }
+    .card{
+        width: 40rem;
+        padding: 1rem;
+        border: none;
+    }
+    .card img{
+        width: 35rem;
+    }
+    .cardtext{
+        font-size: 2.3rem;
+    }
+    /* .card::after{
+        content: "";
+        position: absolute;
+        left: 5;
+        bottom: 0;
+        height: .8rem;
+        width: 0%;
+        background-color: #fa710f;
+        transition: all ease 1s;
+    }
+    .card:hover::after{
+       width: 96%;
+    } */
+  }
+
+
+
+
+  @media screen and (max-width: 1323px) {
+    .bodyimage img{
+        display: flex;
+        margin: 0 auto;
+        max-width: 100rem;
+    }
+    .card{
+        width: 35rem;
+        padding: 1rem;
+        border: none;
+    }
+    .card img{
+        width: 30rem;
+    }
+    .cardtext{
+        font-size: 2.1rem;
+    }
+    /* .card::after{
+        content: "";
+        position: absolute;
+        left: 5;
+        bottom: 0;
+        height: .8rem;
+        width: 0%;
+        background-color: #fa710f;
+        transition: all ease 1s;
+    }
+    .card:hover::after{
+       width: 96%;
+    } */
+
+
+
+    input,
+    textarea {
+      width: 35rem;
+      margin-top:4px;
+      font-size: 1.4rem;
+      height: 1.5px;
+      border-bottom: 4px solid white;
+    }
+    .contact-handle a{
+        font-size: 1.8rem;
+        padding: .7rem;
+      }
+    .contact-btn {
+        font-size: 1.4rem;
+        height: 35px;
+        width: 30%;
+    }
+  }
+
+
+  @media screen and (max-width: 1190px) {
+    .nav-link {
+        font-size: 1.6rem;
+    }
+    .dropbtn{
+        font-size: 1.6rem;
+    }
+    .dropitem{
+        font-size: 1.6rem;
+    }
+
+
+
+
+
+    .bodyimage img{
+        display: flex;
+        margin: 0 auto;
+        max-width: 80rem;
+    }
+    .card{
+        width: 30rem;
+        padding: 1rem;
+        border: none;
+    }
+    .card img{
+        width: 25rem;
+    }
+    .cardtext{
+        font-size: 2rem;
+    }
+    /* .card::after{
+        content: "";
+        position: absolute;
+        left: 5;
+        bottom: 0;
+        height: .8rem;
+        width: 0%;
+        background-color: #fa710f;
+        transition: all ease 1s;
+    }
+    .card:hover::after{
+       width: 96%;
+    } */
+
+
+
+    .storybuttons button{
+        margin: 1px;
+        height: 8rem;
+        width: 15rem;
+        font-size: 1.8rem;
+       
+    }
+
+
+
+
+    input,
+    textarea {
+      width: 30rem;
+      margin-top:2px;
+      font-size: 1.4rem;
+      height: 1.2px;
+      border-bottom: 3px solid white;
+    }
+    .contact-handle a{
+        font-size: 1.5rem;
+        padding: .7rem;
+      }
+    .contact-btn {
+        font-size: 1.2rem;
+        height: 30px;
+        width: 30%;
+    }
+  }
+
+
+  @media screen and (max-width: 1059px) {
+    .bodyimage img{
+        display: flex;
+        margin: 0 auto;
+        max-width: 60rem;
+    }
+    .card{
+        width: 25rem;
+        padding: 1rem;
+        border: none;
+    }
+    .card img{
+        width: 20rem;
+    }
+    .cardtext{
+        font-size: 2rem;
+    }
+    /* .card::after{
+        content: "";
+        position: absolute;
+        left: 5;
+        bottom: 0;
+        height: .8rem;
+        width: 0%;
+        background-color: #fa710f;
+        transition: all ease 1s;
+    }
+    .card:hover::after{
+       width: 96%;
+    } */
+
+
+
+
+    .storybuttons button{
+        margin: 1px;
+        height: 7rem;
+        width: 12rem;
+        font-size: 1.5rem;
+       
+    }
+
+
+
+
+    input,
+    textarea {
+      width: 25rem;
+      margin-top:1.5px;
+      font-size: 1.2rem;
+      height: 1px;
+      border-bottom: 3px solid white;
+    }
+    .contact-handle a{
+        font-size: 1.2rem;
+        padding: .7rem;
+      }
+    .contact-btn {
+        font-size: 1.1rem;
+        height: 25px;
+        width: 30%;
+    }
+  }
