@@ -266,7 +266,7 @@ nav li:last-child {
     font-size: 3rem;
     font-weight: 600;
     font-family: sans-serif;
-    text-align: justify;
+    /* text-align: justify; */
 }
 .cardtext{
     font-size: 1.5rem;
