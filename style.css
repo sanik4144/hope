@@ -504,3 +504,241 @@ nav li:last-child {
     transition: all .3s;
   }
   /* contact section ends here  */
+
+
+
+
+
+
+  @media screen and (max-width: 1454px) {
+    .nav-link {
+        font-size: 1.7rem;
+    }
+    .dropbtn{
+        font-size: 1.7rem;
+    }
+    .dropitem{
+        font-size: 1.7rem;
+    }
+
+
+
+    .card{
+        max-width: 40rem;
+    }
+    .cardh2{
+        font-size: 2.8rem;
+    }
+    .cardtext{
+        font-size: 1.5rem;
+    }
+    .cardimg{
+        border-bottom: .6rem solid #fd6804;
+    }
+    .cardbtn{
+        height: 4rem;
+        width: 50%;
+        font-size: 1.5rem;
+    }
+
+
+
+    .card1-side{
+        height: 10rem;
+    }
+    .card1 img{
+        width: 50rem;
+    }
+    .card1-side.back {
+        width: 50rem;
+    }
+    .card1-side.back h1{
+        font-size: 3rem;
+    }
+    .card1-side.back p{
+        font-size: 1.5rem;
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 1387px) {
+    .nav-link {
+        font-size: 1.7rem;
+    }
+    .dropbtn{
+        font-size: 1.7rem;
+    }
+    .dropitem{
+        font-size: 1.7rem;
+    }
+
+    .ad1-text p{
+        font-size: 2.5rem;
+    }
+    .ad1-image img{
+        width: 41rem;
+    }
+
+
+
+    input,
+    textarea {
+      width: 35rem;
+      margin-top:4px;
+      font-size: 1.4rem;
+      height: 1.5px;
+      border-bottom: 4px solid white;
+    }
+    .contact-handle a{
+        font-size: 1.8rem;
+        padding: .7rem;
+      }
+    .contact-btn {
+        font-size: 1.4rem;
+        height: 35px;
+        width: 30%;
+    }
+  }
+
+
+  @media screen and (max-width: 1250px) {
+    .nav-link {
+        font-size: 1.6rem;
+    }
+    .dropbtn{
+        font-size: 1.6rem;
+    }
+    .dropitem{
+        font-size: 1.6rem;
+    }
+
+    .cardh2{
+        font-size: 2.5rem;
+    }
+
+    .ad1-text p{
+        font-size: 2rem;
+    }
+    .ad1-image img{
+        width: 38rem;
+    }
+
+    
+    .card1-side{
+        height: 8rem;
+    }
+    .card1 img{
+        width: 42rem;
+    }
+    .card1-side.back {
+        width: 42rem;
+    }
+    .card1-side.back h1{
+        font-size: 2.8rem;
+    }
+    .card1-side.back p{
+        font-size: 1.4rem;
+    }
+
+
+
+
+    input,
+    textarea {
+      width: 30rem;
+      margin-top:2px;
+      font-size: 1.4rem;
+      height: 1.2px;
+      border-bottom: 3px solid white;
+    }
+    .contact-handle a{
+        font-size: 1.5rem;
+        padding: .7rem;
+      }
+    .contact-btn {
+        font-size: 1.2rem;
+        height: 30px;
+        width: 30%;
+    }
+  }
+
+
+
+
+  @media screen and (orientation: portrait) {
+    .nav-link {
+        font-size: 1.2rem;
+    }
+    .dropbtn{
+        font-size: 1.2rem;
+    }
+    .dropitem{
+        font-size: 1.2rem;
+    }
+
+
+    
+    .ad1{
+        display: flex;
+        flex-direction: column;
+    }
+    .ad1-text{
+        border-radius: 2rem;
+    }
+    .ad1-image img{
+        border-radius: 2rem;
+    }
+
+
+    .cardgroup1{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+
+
+    .rotatingcard{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 50%;
+    }
+    .rotatingcard-section{
+        margin-bottom: 30rem;
+    }
+    .card1{
+        margin-bottom: 30rem;
+    }
+
+
+
+    #contact-section{
+        display: flex;
+        flex-direction: column;
+    }
+    input,
+    textarea {
+      width: 10rem;
+      margin-top:4px;
+      font-size: 1.2rem;
+      height: 1.5px;
+      border-bottom: 4px solid white;
+    }
+    .contact-box{
+        margin-bottom: 3rem;
+        margin-right: 15rem;
+    }
+    .contact-handle a{
+        font-size: 1.5rem;
+        padding: .7rem;
+      }
+    .contact-btn {
+        font-size: 1.4rem;
+        height: 30px;
+        width: 20%;
+    }
+  }

@@ -595,3 +595,84 @@ nav li:last-child {
         width: 30%;
     }
   }
+
+
+
+
+
+  @media screen and (orientation: portrait) {
+    .nav-link {
+        font-size: 1.2rem;
+    }
+    .dropbtn{
+        font-size: 1.2rem;
+    }
+    .dropitem{
+        font-size: 1.2rem;
+    }
+
+
+    .stories-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .storiescard{
+        display: flex;
+        flex-direction: row;
+    }
+    .bodyimage img{
+        display: flex;
+        margin: 0 auto;
+        max-width: 60rem;
+    }
+    .card{
+        width: 30rem;
+        padding: 1rem;
+        border: none;
+    }
+    .card img{
+        width: 30rem;
+    }
+    .cardtext{
+        font-size: 1rem;
+    }
+    /* .card::after{
+        content: "";
+        position: absolute;
+        left: 5;
+        bottom: 0;
+        height: .8rem;
+        width: 0%;
+        background-color: #fa710f;
+        transition: all ease 1s;
+    }
+    .card:hover::after{
+       width: 96%;
+    } */
+
+    #contact-section{
+        display: flex;
+        flex-direction: column;
+    }
+    input,
+    textarea {
+      width: 10rem;
+      margin-top:4px;
+      font-size: 1.2rem;
+      height: 1.5px;
+      border-bottom: 4px solid white;
+    }
+    .contact-box{
+        margin-bottom: 3rem;
+        margin-right: 15rem;
+    }
+    .contact-handle a{
+        font-size: 1.5rem;
+        padding: .7rem;
+      }
+    .contact-btn {
+        font-size: 1.4rem;
+        height: 30px;
+        width: 20%;
+    }
+  }
