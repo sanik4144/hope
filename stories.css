@@ -757,6 +757,9 @@ nav li:last-child {
     .form-field {
         width: 30rem;
     }
+    ::placeholder{
+        font-size: 1.5rem;
+    }
 
     .contact-box {
         text-align: center;
