@@ -742,3 +742,218 @@ nav li:last-child {
         width: 20%;
     }
   }
+
+
+  @media screen and (max-width: 570px) {
+
+    /* header */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        color: black;
+        padding: .5rem;
+        position: sticky;
+        top: 0;
+        gap:20px;
+        z-index: 10;
+        min-height: 3vh;
+    }
+
+    /* nav section */
+
+    .logo img {
+        margin-left: 7px;
+        width: 75px;
+        height: 45px;
+        border: 1px solid #fa791e;
+        padding: 2px;
+        border-radius: 7px;
+    }
+
+    nav li {
+        /* display: inline-block; */
+        margin-right: 1rem;
+        padding: 0.5rem;
+        /* padding-top: 0%;
+        padding-bottom: 0%;
+        transition: all 0.4s; */
+    }
+
+    .nohover {
+        background-color: #f18035;
+        color: white !important;
+        padding: 10px;
+        transition: all 0.3s;
+    }
+
+
+
+    .donationprogess {
+        width: 95%;
+        /* margin-left: 0.5rem; */
+        /* margin-right: 0.5rem; */
+    }
+    .donationprogess h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .progresspara {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .prg-btn {
+        margin-left: 4rem;
+    }
+
+    .progressbtn2 {
+        margin-left: 6rem;
+    }
+
+    .cardgroup1-text h1{
+        font-size: 2.5rem;
+    }
+
+    .cardgroup1-text p {
+        font-size: 1.6rem;
+        font-family: sans-serif;
+    }
+    
+    .cardgroup1-text p {
+        font-size: 1.3rem;
+        font-family: sans-serif;
+        margin-top: 8px;
+    }
+
+
+    .ad1 {
+        gap: 3rem;
+    }
+
+    .ad1-text {
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+
+    .ad1-text p {
+        font-size: 1.5rem;
+    }
+
+    .cardgroup1 {
+        width: 80%;
+        padding: 0.5rem;
+        margin: 0 auto;
+    }
+
+    .cardh2 {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+
+    .card {
+        width: 100%;
+    }
+
+    .rotatingcard-section {
+        width: 100%;
+    }
+
+    .rotatingcard-text h1 {
+        font-size: 2.5rem;
+        font-family: sans-serif;
+        margin-top: 8px;
+    }
+
+    .rotatingcard-text p {
+        font-size: 1.3rem;
+        font-family: sans-serif;
+    }
+
+    /* .card1{
+        width: 10rem;
+    } */
+
+    .card1 {
+        width: 100%;
+        height: 30%;
+        /* border: 2px solid black; */
+        /* gap: 200px; */
+    }
+
+    .card1 img {
+        width: 25rem;
+        /* margin-left: 40px; */
+        /* margin: 0 auto; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rotatingcard {
+        width: 57%;
+    }
+
+    .card1-side.back {
+        margin: 0;
+        width: 25rem;
+        height: 100%;
+    }
+
+    .card1-side.back h1 {
+        font-size: 1.8rem;
+    }
+
+    .card1-side.back p {
+        font-size: 1.2rem;
+    }
+
+    .donationbar-section {
+        width: 100%;
+        /* margin-top: 100px; */
+        /* height: 80%; */
+    }
+
+    .donationbar {
+        width: 100%;
+        display: flex;
+        height: 5rem;
+    }
+
+    .donationbar h1 {
+        font-size: 2rem;
+    }
+
+    .donationbar input {
+        /* margin: 2rem; */
+        width: 10rem;
+        border-radius: .5rem;
+        height: 1rem;
+    }
+
+    .form-field {
+        width: 30rem;
+    }
+
+    
+    #contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* flex-direction: column; */
+    }
+
+    .contact-btn{
+        width: 15rem;
+        height: 4rem;
+    }
+
+    .contact-handle {
+        padding-left: 14rem;
+        padding-right: 10rem;
+        margin-bottom: 3rem;
+    }
+}

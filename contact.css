@@ -156,6 +156,7 @@ nav li:last-child {
   .owners-card-section {
     display:flex;
     align-items: center;
+    flex-wrap: wrap;
     /* text-align: center; */
   }
   
@@ -294,3 +295,133 @@ nav li:last-child {
     transition: all .3s;
   }
   /* contact section ends here  */
+
+
+  @media screen and (max-width: 570px) {
+
+    /* header */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        color: black;
+        padding: .5rem;
+        position: sticky;
+        top: 0;
+        gap: 20px;
+        z-index: 10;
+        min-height: 3vh;
+    }
+
+    /* nav section */
+
+    .logo img {
+        margin-left: 7px;
+        width: 75px;
+        height: 45px;
+        border: 1px solid #fa791e;
+        padding: 2px;
+        border-radius: 7px;
+    }
+
+    nav li {
+        margin-right: 1rem;
+        padding: 0.5rem;
+    }
+    .nav-link {
+      font-size: 1.2rem;
+  }
+  .dropbtn{
+      font-size: 1.2rem;
+  }
+  .dropitem{
+      font-size: 1.2rem;
+  }
+
+    .nohover {
+        background-color: #f18035;
+        color: white !important;
+        padding: 10px;
+        transition: all 0.3s;
+    }
+
+    .owners-card-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+
+    .owners h3 {
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 3rem;
+        background-color: #f180359a;
+        margin: 20px;
+        margin-right: 20%;
+        margin-left: 20%;
+        border-radius: 5rem;
+        font-style: italic;
+        font-stretch: wider;
+    }
+
+    .owners-card {
+        flex: 1;
+        height: 480px;
+        border-radius: 0.6rem;
+        background-color: #f1803555;
+        border: #f180359a solid 0.5px;
+        box-shadow: 5px 5px 15px 1px;
+        padding: 2rem;
+        margin: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s;
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .owners-image {
+        display: block;
+        width: 30rem;
+        text-align: center;
+        align-items: center;
+        border-radius: 0.6rem;
+        filter: grayscale(100%);
+        transition: all 0.3s;
+    }
+
+    /* footer */
+
+    .form-field {
+        width: 30rem;
+    }
+
+    .contact-box {
+        text-align: center;
+        margin-left: 2rem;
+    }
+
+    #contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* flex-direction: column; */
+    }
+
+    .contact-btn{
+        width: 15rem;
+        height: 4rem;
+    }
+
+    .contact-handle {
+        padding-left: 14rem;
+        padding-right: 10rem;
+        margin-bottom: 3rem;
+    }
+}

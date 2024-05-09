@@ -676,3 +676,109 @@ nav li:last-child {
         width: 20%;
     }
   }
+
+
+  @media screen and (max-width: 570px) {
+
+    /* header */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        color: black;
+        padding: .5rem;
+        position: sticky;
+        top: 0;
+        gap: 20px;
+        z-index: 10;
+        min-height: 3vh;
+    }
+
+    /* nav section */
+
+    .logo img {
+        margin-left: 7px;
+        width: 75px;
+        height: 45px;
+        border: 1px solid #fa791e;
+        padding: 2px;
+        border-radius: 7px;
+    }
+
+    nav li {
+        /* display: inline-block; */
+        margin-right: 1rem;
+        padding: 0.5rem;
+        /* padding-top: 0%;
+        padding-bottom: 0%;
+        transition: all 0.4s; */
+    }
+
+    .nohover {
+        background-color: #f18035;
+        color: white !important;
+        padding: 10px;
+        transition: all 0.3s;
+    }
+
+    /* hero */
+
+    .bodyimage img {
+        display: flex;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .storiescard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .upcoming {
+        width: 100%;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    /* footer */
+
+    .form-field {
+        width: 30rem;
+    }
+
+    .contact-box {
+        text-align: center;
+        margin-left: 15rem;
+    }
+
+    #contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* flex-direction: column; */
+    }
+
+    .contact-btn {
+        width: 15rem;
+        height: 4rem;
+    }
+
+    .contact-handle {
+        padding-left: 14rem;
+        padding-right: 10rem;
+        margin-bottom: 3rem;
+    }
+}
