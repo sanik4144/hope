@@ -135,7 +135,9 @@ nav li:last-child {
 }
 /* Dropdown button handling end*/
 
-
+#carimg{
+    height: 75rem;
+}
 
 /* Donation Progress Start */
 
@@ -224,6 +226,7 @@ nav li:last-child {
     text-align: justify;
 }
 .ad1-image img{
+    width: 52.5rem;
     border-radius: 0 2rem 2rem 0;
     box-shadow: 2px 2px 8px 2px rgb(117, 110, 110);
 }
@@ -276,6 +279,7 @@ nav li:last-child {
 }
 .cardimg{
     border-bottom: .6rem solid #fd6804;
+    height: 25rem;
 }
 .cardbtn{
     height: 4rem;
@@ -791,6 +795,11 @@ nav li:last-child {
         transition: all 0.3s;
     }
 
+
+
+    #carimg{
+        height: 40rem;
+    }
 
 
     .donationprogess {
