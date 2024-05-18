@@ -736,6 +736,7 @@ nav li:last-child {
 
     .card img {
         width: 100%;
+        height: 20rem;
     }
     .cardtext{
         font-size: 1.5rem;
