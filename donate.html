@@ -266,6 +266,7 @@
                         <th>Country</th>
                         <th>Email</th>
                         <th>Phone</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -352,7 +353,7 @@
             const tbody = document.querySelector('#donationTable tbody');
             tbody.innerHTML = '';
 
-            donations.forEach(function(donation) {
+            donations.forEach(function(donation, index) {
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td>${donation.firstName}</td>
@@ -362,13 +363,53 @@
                     <td>${donation.country}</td>
                     <td>${donation.email}</td>
                     <td>${donation.phone}</td>
+                    <td>
+                        <button class="update-btn" data-index="${index}">Update</button>
+                        <button class="delete-btn" data-index="${index}">Delete</button>
+                    </td>
                 `;
                 tbody.appendChild(row);
             });
+
+            document.querySelectorAll('.delete-btn').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    const index = this.dataset.index;
+                    deleteDonation(index);
+                });
+            });
+
+            document.querySelectorAll('.update-btn').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    const index = this.dataset.index;
+                    loadDonationForUpdate(index);
+                });
+            });
         }
 
-        window.onload = displayDonations;
+        function deleteDonation(index) {
+            let donations = JSON.parse(localStorage.getItem('donations')) || [];
+            donations.splice(index, 1);
+            localStorage.setItem('donations', JSON.stringify(donations));
+            displayDonations();
+        }
 
+        function loadDonationForUpdate(index) {
+            const donations = JSON.parse(localStorage.getItem('donations')) || [];
+            const donation = donations[index];
+
+            document.getElementById('first_name').value = donation.firstName;
+            document.getElementById('last_name').value = donation.lastName;
+            document.getElementById('address_1').value = donation.address1;
+            document.getElementById('address_2').value = donation.address2;
+            document.getElementById('city').value = donation.city;
+            document.getElementById('state').value = donation.state;
+            document.getElementById('zip').value = donation.zip;
+            document.getElementById('country').value = donation.country;
+            document.getElementById('email').value = donation.email;
+            document.getElementById('phone').value = donation.phone;
+
+            localStorage.setItem('update_index', index);
+        }
 
         document.getElementById('Donate-now').addEventListener('click', function() {
             const firstName = document.getElementById('first_name').value;
@@ -407,15 +448,24 @@
             };
 
             let donations = JSON.parse(localStorage.getItem('donations')) || [];
-            donations.push(donationData);
+            const updateIndex = localStorage.getItem('update_index');
+
+            if (updateIndex !== null) {
+                donations[updateIndex] = donationData;
+                localStorage.removeItem('update_index');
+            } else {
+                donations.push(donationData);
+            }
+
             localStorage.setItem('donations', JSON.stringify(donations));
 
             alert('Donation details have been saved to localStorage!');
             window.location.reload();
         });
 
-    </script>
+        window.onload = displayDonations;
 
+    </script>
 
 </body>
 
