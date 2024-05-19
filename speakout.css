@@ -18,7 +18,7 @@ html {
 
 .speak-box {
     display: flex;
-    align-items: ;
+    align-items: center;
     justify-content: space-between;
     max-width: 120rem;
     width: 100%;
@@ -54,7 +54,7 @@ html {
 }
 
 .speak-img-box {
-    max-width: 50%;
+    max-width: 60%;
     padding-left: 50px;
 }
 
